@@ -1,5 +1,5 @@
 # cbpiano-website-react
-React.js version of chrisbaileypiano website
+React.js version of [chrisbaileypiano website](https://chrisbaileypiano.com).
 
 ## Getting Started with Create React App
 
