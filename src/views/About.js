@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import DobrijaAndI from '../assets/images/Dobrija-and-I.jpg';
 
 function About() {
+    useEffect(() => {
+        document.title = "About | Chris Bailey Piano";
+    }, []);
+
     const imageStyle = {
         float: 'right',
         margin: '3px 0 8px 12px',

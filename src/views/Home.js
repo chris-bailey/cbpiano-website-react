@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.scss';
 
+
 function Home() {
+  useEffect(() => {
+    document.title = "Chris Bailey - New Age Pianist";
+  }, []);
+
   return (
     <div id="mainContent">
 

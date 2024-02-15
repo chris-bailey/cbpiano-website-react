@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 
 const Contact = () => {
   useEffect(() => {
+    document.title = "Contact | Chris Bailey Piano";
+
     // Function to load external scripts
     const loadScript = (src) => {
       const script = document.createElement('script');
@@ -16,7 +18,7 @@ const Contact = () => {
 
     // Add event listeners
     const formkeepEmbed = document.querySelector('#formkeep-embed');
-    
+
     const handleFormSubmitting = () => {
       console.log('Submitting form...');
     };

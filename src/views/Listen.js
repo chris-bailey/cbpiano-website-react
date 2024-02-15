@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Listen.scss';
 
 function Listen() {
+    useEffect(() => {
+        document.title = "Listen | Chris Bailey Piano";
+    }, []);
+
     return (
         <div id="mainContentItunes">
             <h1>I Will Always Remember</h1>

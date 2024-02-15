@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+
 function PrivacyPolicy() {
+  useEffect(() => {
+    document.title = "Privacy Policy | Chris Bailey Piano";
+  }, []);
+
   return (
     <div id="mainContent">
       <h1>Privacy Policy</h1>

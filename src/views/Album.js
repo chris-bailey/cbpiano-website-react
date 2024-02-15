@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Album.scss';
 import cdCover from '../assets/images/cd-cover.jpg';
 
 function Album() {
+    useEffect(() => {
+        document.title = "Album | Chris Bailey Piano";
+    }, []);
+
     return (
-        <div id = "albumContent">
+        <div id="albumContent">
             <h1 id="firstHeading">I Will Always Remember</h1>
 
             <div className="topContent">
@@ -23,7 +27,7 @@ function Album() {
                 <div id="leftColumn">
                     <h3 className="center">Dad</h3>
                     <p>After my father passed away in 1995 the theme for this song came to me suddenly, and I knew it should be dedicated to him.</p>
-                    
+
                     <h3 className="center">Emma</h3>
                     <p>This song is in loving memory of my young cousin Emma who left us way too early.</p>
 
@@ -43,7 +47,7 @@ function Album() {
                 <div id="rightColumn">
                     <h3 className="center">Water Drops</h3>
                     <p>This theme was inspired by a summer spent surrounded by nature.</p>
-                    
+
                     <h3 className="center">Letting Go</h3>
                     <p>Sometimes in order to move forward we are forced to let go.</p>
 

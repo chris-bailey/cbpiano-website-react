@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Sitemap.scss';
 import { Link } from 'react-router-dom';
 
 function Sitemap() {
+  useEffect(() => {
+    document.title = "Sitemap | Chris Bailey Piano";
+  }, [])
+
   return (
     <div id="mainContentSitemap">
       <h1>Sitemap</h1>
