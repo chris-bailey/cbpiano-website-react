@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './MainHeader.scss';
+import ReactGA from 'react-ga';
+import { useLocation } from 'react-router-dom';
+
+// Setup Google Analytics Tracking
+function usePageTracking() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize(process.env.REACT_APP_GA_ID);
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+}
+
 
 function MainHeader() {
+  usePageTracking(); // This line is added to track page views
   return (
+    
     <>
       <header>
         {/* Banner image is shown using CSS */}
